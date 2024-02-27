@@ -8,7 +8,7 @@ from os import getenv
 
 # api_key = os.getenv("OPENAI_API_KEY")
 
-chatllm = ChatOpenAI(api_key="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", temperature=0.6, model= 'gpt-3.5-turbo', )
+chatllm = ChatOpenAI(temperature=0.6, model= 'gpt-3.5-turbo', )
     
 template = "You are a Medical Consultant AI assistant. When ever the user gives any input, you should give the user suggestion on how he can perform a temporary first aid or any temporary action he can take based on the emergency he has mentione in the text untill the actual emergency services arrive to assist him and then give the answer. The answer should be comma seperated and should be given as a paragraph or pointwise according to the query given. Beging the answer by mentioning 'The concerned departments are at work to well assist you. Meanwhile you can'"
 human_template = "{text}"
